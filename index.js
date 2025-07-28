@@ -4,6 +4,10 @@ const foodsound = new Audio('food.mp3');
 const Gameoversound = new Audio('gameover.mp3');
 const movesound = new Audio('move.mp3');
 const musicsound = new Audio('music.mp3');
+const board = document.getElementById("board");
+const scoreBox = document.getElementById("scoreBox");
+const HighscoreBox = document.getElementById("HighscoreBox");
+let food = {x: 6, y: 7};
 let speed = 7;
 let score = 0;
 let lastpainttime = 0;
@@ -112,7 +116,7 @@ if(Highscore === null){
 }
 else{
     Highscoreval = JSON.parse(Highscore);
-    HighscoreBox.innerHTML = "Highscore: " + Highscore;
+    HighscoreBox.innerHTML = "Highscore: " + Highscoreval;
 }
 window.requestAnimationFrame(main);
 window.addEventListener('keydown', e =>{
