@@ -55,3 +55,19 @@ border-radius: 9px;
     border: .25vmin solid black;
     border-radius: 8px;
 }
+@media (max-width: 600px) {
+    #scoreBox, #HighscoreBox {
+        font-size: 20px;
+        right: 10px;
+        top: 10px;
+    }
+
+    #HighscoreBox {
+        top: 50px;
+    }
+
+    #board {
+        width: 95vmin;
+        height: 95vmin;
+    }
+}
